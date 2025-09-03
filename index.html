@@ -4,85 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>HTML- tabela Brasileirão</title>
+    <title>HTML</title>
   </head>
   <body>
-    <!-- - lista nao ordenada--->
-    <ul>
-      <li>Banana</li>
-      <li>Toranja</li>
-      <li>Pera</li>
-      <li>Maça</li>
-    </ul>
+    <h1> Formulario completo</h1>
+    <hr>
+    <form action="/enviar-dados" method="post">
+      <fieldset>
+        <legend> Informações Pessoais</legend>
+        <label for="nome">Nome completo:</label>
+        <input type=" "text id = "nome" name = "nome"
+        placeholder="Digite Seu Nome" required><br>
 
-    <!-- lista ordenada -->
+        <label for="email ">E-mail:</label>
+        <input type="email" id="email" name="email"
+        placeholder="seu-email@exemplo.com" required><br>
 
-    <ol>
-      <li>git init</li>
-      <li>git status</li>
-      <li>git add .</li>
-    </ol>
+        <label for = "senha">senha:</label>
+        <input type = "password" id=" senha" name="senha"
+        placeholder="Digite sua senha" required><br>
 
-    <!-- lista alinhadas -->
-    <ul>
-      <li>
-        frutas
-        <ul>
-          <li>Pera</li>
-          <li>roma</li>
-          <li>ameixa</li>
-          <!--(Meio que uma pesta de listas) -->
-        </ul>
-      </li>
-    </ul>
+        <label for ="idade">idade</label>
+        <input type = " number" id="idade" name="idade" min="16" max="90"><br>
 
-    <!-- HTML semânticos -->
 
-    <h2>HTML Semântico</h2>
-    <hr />
-    <!-- hear é o cabeçalho do site -->
-    <header>
-      <img src="" alt="" />
 
-      <!-- nav area de navegaçaõ -->
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Produtos</a>
-      </nav>
-    </header>
-    <main>
-      <form action="https://www.google.com/search">
-        <input type="text " name="q" placeholder=" Pesquise no google" />
-        <button type="submit">buscar</button>
-      </form>
-    </main>
+        <label for ="data-nascimento">Data Nascimento:</label>
+        <input type = "date" id="data-nascimento" name="data-nascimento"
+        placeholder=" digite seu nascimento"><br>
+        
 
-    <section>
-      <!--cria seções dentro -->
-      <h2>Ultimas pesquisas</h2>
-      <p>Golpe Bolsonaro</p>
-    </section>
+        <label for ="genero">Genero:</label>
+        <select name =" genero" id="genero">
+          <option value="masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Outro">Outro</option>
+          <option value="Prefiro-nao-dizer">Prefiro não dizer</option>
+        </select>
+      </fieldset>
 
-    <!-- artigos independentes -->
-    <article>
-      <h2>Titulo</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        comodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </article>
-    <!-- conteudo relacionado -->
-    <aside>
-      <h3>Video Relacionados</h3>
-      <ul>
-        <li><a href="">como programar HTML</a></li>
-      </ul>
-    </aside>
+      <fieldset>
+        <legend>Outras informações</legend>
+        <details>
+          <sumary>O que é um formulario</sumary>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. </p>
+        </details><br>
+        <label for="hora-cadastro">Horario preferido para contato:</label>
+        <input type=" time"id= "hora-cadastro" 
+        name="hora-cadastro">
+
+        <button type="submit">Cadastrar</button>
+      </fieldset>
+    </form>
+ 
   </body>
 </html>
 
